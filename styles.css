@@ -1,24 +1,64 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .header {
     background-color: #1F2937;
     color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    
 }
+
+
 
 .logo {
     font-size: 24px;
+    font-style: bold;
+    align-self: flex-start;
+    padding: 25px 25px 100px 125px;  
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    margin-top: -140px;
+    margin-bottom: 80px;
+    padding-right: 90px;
+}
+
+.menu-list {
+    display: inline-block;
+    margin: 20px;
 }
 
 .menu, #hero-text {
     color: #E5E7EB;
     font-size: 18px
+
+}
+
+.hero {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero-heading {
     font-size: 48px;
     font-weight: 900;
+    width: 400px;
+}
+
+#hero-text {
+    width: 455px;
+    padding-bottom: 12px;
 }
 
 .signup {
@@ -28,12 +68,18 @@
     border: none;
     padding: 8px 30px;
     border-radius: 8px;
+    align-self: flex-start;
 }
 
 .hero-image {
-    width: 400px;
-    height: 250px;
+    width: 430px;
+    height: 190px;
     background-color: grey;
+    align-self: flex-end;
+    margin-top: -210px;
+    margin-bottom: 110px;
+    text-align: center;
+    line-height: 185px;
 }
 
 .info-image {
